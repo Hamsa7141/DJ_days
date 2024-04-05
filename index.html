@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ Days</title>
-    <link rel="stylesheet" href="sytles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Days</title>
+  <link rel="stylesheet" href="S.css">
 </head>
 <body>
-    <div class="container">
-        <h1>DJ Days</h1>
-        <div class="now-playing">
-            <h2>Now Playing</h2>
-            <div class="album-cover">
-                <img src="50.jpg" alt="Album Cover" id="album-cover-img">
-            </div>
-            <div class="album-info">
-                <h3 id="album-title">Album Title</h3>
-                <p id="album-artist">Artist Name</p>
-            </div>
+  <header>
+    <h1>Virtual DJ</h1>
+  </header>
+
+  <main>
+    <section id="now-playing">
+      <h2>Now Playing</h2>
+      <div id="album-display">
+        <img id="album-cover" src="Images/50.jpg" alt="Album Cover">
+        <img id="album-cover" src="Images/baby.jpeg" alt="Album Cover">
+        <img id="album-cover" src="Images/Lil.jpeg" alt="Album Cover">
+        <img id="album-cover" src="Images/One.jpeg" alt="Album Cover">
+        <div id="album-info">
+          <h3 id="album-title"></h3>
+          <p id="album-artist"></p>
         </div>
-        <div class="album-list">
-            <h2>Album List</h2>
-            <ul id="album-list-ul"></ul>
-        </div>
-        <div class="add-album">
-            <h2>Add New Album</h2>
-            <form id="add-album-form">
-                <input type="text" id="album-title-input" placeholder="Album Title" required>
-                <input type="text" id="album-artist-input" placeholder="Artist Name" required>
-                <input type="text" id="album-genre-input" placeholder="Genre" required>
-                <input type="text" id="album-cover-input" placeholder="Cover Art URL" required>
-                <button type="submit">Add Album</button>
-            </form>
-        </div>
-        <div class="library-status">
-            <p id="library-status-message"></p>
-        </div>
-    </div>
-    <script src="js.js"></script>
+      </div>
+    </section>
+
+    <section id="album-list">
+      <h2>Album List</h2>
+      <ul id="albums"></ul>
+    </section>
+
+    <section id="add-album">
+      <h2>Add New Album</h2>
+      <form id="album-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+        <label for="artist">Artist:</label>
+        <input type="text" id="artist" required>
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" required>
+        <label for="cover-url">Cover URL:</label>
+        <input type="text" id="cover-url" required>
+        <button type="submit">Add Album</button>
+      </form>
+    </section>
+
+    <section id="library-status">
+      <h2>Library Status</h2>
+      <p id="status-message"></p>
+    </section>
+  </main>
+
+  <script src="js.js"></script>
 </body>
 </html>
