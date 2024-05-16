@@ -1,0 +1,33 @@
+// albums.json
+[
+    {
+      "title": "Abbey Road",
+      "artist": "The Beatles",
+      "genre": "Rock",
+      "coverUrl": "https://example.com/abbey-road.jpg"
+    },
+    {
+      "title": "Thriller",
+      "artist": "Michael Jackson",
+      "genre": "Pop",
+      "coverUrl": "https://example.com/thriller.jpg"
+    },
+    {
+      "title": "Nevermind",
+      "artist": "Nirvana",
+      "genre": "Grunge",
+      "coverUrl": "https://example.com/nevermind.jpg"
+    },
+    {
+      "title": "The Dark Side of the Moon",
+      "artist": "Pink Floyd",
+      "genre": "Progressive Rock",
+      "coverUrl": "https://example.com/dark-side-of-the-moon.jpg"
+    },
+    {
+      "title": "Rumours",
+      "artist": "Fleetwood Mac",
+      "genre": "Rock",
+      "coverUrl": "https://example.com/rumours.jpg"
+    }
+  ]
